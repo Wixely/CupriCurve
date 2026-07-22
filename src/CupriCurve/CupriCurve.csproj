@@ -5,10 +5,17 @@
     <AssemblyName>CupriCurve</AssemblyName>
     <!-- Constant-time crypto: no unsafe needed yet, but allow if a hot path requires it later. -->
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <!-- Public API documentation ships in the package for IntelliSense. -->
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
     <InternalsVisibleTo Include="CupriCurve.Tests" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 
 </Project>
