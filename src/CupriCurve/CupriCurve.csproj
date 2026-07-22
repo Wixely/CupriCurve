@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>CupriCurve</RootNamespace>
+    <AssemblyName>CupriCurve</AssemblyName>
+    <!-- Constant-time crypto: no unsafe needed yet, but allow if a hot path requires it later. -->
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="CupriCurve.Tests" />
+  </ItemGroup>
+
+</Project>
